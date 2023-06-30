@@ -1,0 +1,15 @@
+#header-menu{
+    display: flex;
+    gap:30px;
+    font-size: 0.9rem;
+    padding:1em 10em ;
+    margin-top: 0.1em;;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    box-shadow: 0 1px 3px #0000001a,0 2px 2px #0000000f,0 0 2px #00000012;
+    
+  }
+  #header-menu a{
+    text-decoration: none;
+    color:black;
+  }

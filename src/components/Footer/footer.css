@@ -1,0 +1,36 @@
+
+footer {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 4%;
+  font-weight: 500;
+  font-size: 17px;
+  box-shadow: 0 1px 2px #0000001a, 0 -2px 2px #0000000f, 2px 2px 2px #00000012;
+}
+
+footer ul li {
+  padding: 4% 0;
+  font-weight: 400;
+  font-size: medium;
+  width: 260px;
+}
+
+.footer-icons {
+  width: 30px;
+  margin-right: 1%;
+  margin-bottom: 1%;
+}
+.footer2 {
+  padding: 2%;
+}
+
+.foot-note {
+  font-weight: 600;
+}
+.foot-note span {
+  padding-right: 2%;
+}
+.copy {
+  font-size: smaller;
+  margin-top: 1%;
+}

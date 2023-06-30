@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --black: black;
+    --green: #006241;
+    --white: white;
+    --white2: #eeebeb;
+    --green2: #1e3932;
+    --olive: #a0c292;
+    --pink: #f6bfd9;
+    --lightgreen: #d4e9e2;
+    --beige: #fff4d4;
+    --grey: #f0edeb8d;
+  }
+  body {
+    font-family: "Maven Pro", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.4;
+    color: var(--black);
+  
+  }
+  a{
+    text-decoration: none;
+    color:var(--black)
+  }
+  ul li{
+    list-style: none;
+  }

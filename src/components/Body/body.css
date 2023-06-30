@@ -1,0 +1,173 @@
+
+/*buttons*/
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    background: none;
+    border: 1px solid var(--black) !important;
+    border-radius: 50px !important;
+    padding: 7px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .btn-dark {
+    color: var(--white);
+    background-color: var(--black);
+  }
+  
+  .btn-light-outline {
+    color: var(--white);
+    border-color: var(--white);
+  }
+  
+  .btn-hover:hover {
+    background-color: var(--white2);
+  }
+  
+  /*body buttons*/
+  .b {
+    font-weight: 600;
+    font-size: large;
+    padding: 9px 18px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 120px;
+  }
+  .b1 {
+    background-color: var(--green2);
+    border: 1px solid var(--white);
+    color: var(--white);
+  }
+  .b2 {
+    background-color: var(--olive);
+  
+    color: var(--green2);
+    margin-left: 42%;
+  }
+  .b3 {
+    background-color: var(--pink);
+    color: var(--green2);
+  }
+  .b4 {
+    background-color: var(--beige);
+    color: var(--green2);
+  }
+  
+  .b5 {
+    margin-left: 42%;
+    background-color: var(--lightgreen);
+    color: var(--green2);
+  }
+  
+  .buttonBorder {
+    border: 1px solid var(--green2);
+  }
+  
+  /*main body*/
+  .box {
+    margin: 35px;
+  
+    display: flex;
+  }
+  
+  .box-size {
+    width: 50%;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .box1 .box-text {
+    background-color: var(--green2);
+    color: var(--white);
+    text-align: center;
+    padding-top: 8%;
+  }
+  
+  .box1 .box-text p {
+    padding: 3% 17%;
+    font-weight: 600;
+    word-spacing: 5px;
+  }
+  
+  .box1 .box-text h3 {
+    line-height: 200%;
+    padding: 3px 89px;
+  }
+  .box2 .box-text {
+    background-color: var(--olive);
+    padding-top: 9%;
+  }
+  
+  .box2 .box-text h1 {
+    color: var(--green2);
+    text-align: center;
+    padding-top: 8%;
+    font-size: 50px;
+    letter-spacing: 3px;
+  }
+  
+  .box2 .box-text h2 {
+    text-align: center;
+    padding: 7% 11%;
+    color: #1e3932;
+    font-weight: 600;
+  }
+  
+  .box3 .box-text {
+    background-color: var(--pink);
+    padding-top: 9%;
+    text-align: center;
+    color: var(--green2);
+    padding-top: 12%;
+  }
+  
+  .box3 h1 {
+    padding: 0 1%;
+    font-size: 49px;
+    letter-spacing: 4px;
+  }
+  
+  .box3 .box-text h2 {
+    padding: 4% 13%;
+    font-weight: 600;
+  }
+  
+  .box4 .box-text {
+    padding-top: 9%;
+    text-align: center;
+    color: var(--green2);
+    background-color: var(--beige);
+  }
+  
+  .box4 .box-text h1 {
+    font-size: 49px;
+    letter-spacing: 4px;
+  }
+  
+  .box4 .box-text h2 {
+    padding: 4% 13%;
+    font-weight: 600;
+  }
+  
+  .box5 .box-text {
+    background-color: var(--lightgreen);
+    color: var(--green2);
+  }
+  
+  .box5 .box-text h3 {
+    font-size: 23px;
+    padding-top: 10%;
+    text-align: center;
+  }
+  
+  .box5 .box-text p {
+    padding: 4% 12%;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+  }
