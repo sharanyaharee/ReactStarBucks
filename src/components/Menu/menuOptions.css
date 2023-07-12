@@ -4,12 +4,20 @@
   height:9em;
   width:9em;
   flex: 1;
+  margin:2em;
 }
+.options h5{
+  width:9em;
+}
+
 .detail{
-  position: absolute;
-  top:30%;
-  left:25%;
   display: flex;
   flex-wrap: wrap;
   gap:10%;
+  max-width:70em;   
 }
+
+/* .wrap{
+  display: flex;
+  align-items: center;
+  } */

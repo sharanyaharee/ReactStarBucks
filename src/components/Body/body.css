@@ -1,5 +1,5 @@
 
-/*buttons*/
+/* buttons
 .btn {
     cursor: pointer;
     display: inline-block;
@@ -26,7 +26,7 @@
   .btn-hover:hover {
     background-color: var(--white2);
   }
-  
+   */
   /*body buttons*/
   .b {
     font-weight: 600;

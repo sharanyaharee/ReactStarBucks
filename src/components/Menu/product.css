@@ -1,0 +1,25 @@
+.product{
+    display: flex;
+    align-items: center;
+    gap:3%;
+    width:100%;
+    background-color: var(--green2);
+    padding:3%;
+    padding-left:16%;
+    color:var(--white);
+   
+}
+.round{
+    width:10em;
+    height:10em;
+    margin: 1em;
+}
+.fixBtn{
+  margin-left:60em;
+  border-radius: 2em;
+}
+.backBtn{
+    margin: 4em;
+    border-radius: 2em;
+    padding: .4em 2em;
+}

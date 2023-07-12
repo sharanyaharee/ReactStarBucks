@@ -1,0 +1,19 @@
+.location{
+    width:100%;
+    background-color: var(--green2); 
+    padding:1em;
+    display: flex;
+    justify-content: space-around;
+     border-bottom:solid var(--white) !important;
+    position: fixed;
+}
+.location h5,span{
+    color: var(--white);
+}
+.location h6{
+color:#ffffffb3;
+}
+.cart{
+    font-size:xx-large;
+    cursor: pointer;
+}

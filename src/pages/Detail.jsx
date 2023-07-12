@@ -5,6 +5,7 @@ import Loader from '../components/Loader'
 import ErrorMessage from '../components/ErrorMessage'
 import MenuBar from '../components/MenuBar/MenuBar'
 import { useFetch } from '../Hooks/useFetch'
+import Location from '../components/Location/Location'
 // https://starbucks-b7dh.onrender.com/featured?catId=1
 const Detail = () => {
   const[data,loading,error] = useFetch("/menu")
@@ -13,10 +14,17 @@ const Detail = () => {
       <MenuBar/>
       {error && <ErrorMessage/>}
       {loading && <Loader/>}
-      {!error && !loading && ( <>
-      <MenuList data={data}/>
-      <MenuOptions/> 
-           </> )}
+      {!error && !loading && (
+      <div className='row'>
+        <div className="col-md-4">
+        <MenuList data={data}/>
+        </div>
+        <div className="col-md-8">
+        <MenuOptions/> 
+        </div>
+      </div>
+                  )}
+       <Location/>
       
     </div>
   )

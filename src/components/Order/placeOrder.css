@@ -1,0 +1,12 @@
+.StoreDetails{
+    background-color: var(--green2);
+    color:var(--white);
+    padding:5em;
+    /*display: flex;
+      justify-content: space-between; */
+}
+.count{
+ 
+ margin:0 auto;
+    
+}

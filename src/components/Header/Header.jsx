@@ -27,7 +27,7 @@ const Header = () => {
               <div className="right-nav">
               <button  id="weather"><i  className="bi bi-cloud-sun-fill" ></i></button>
               
-                 <i className="bi bi-geo-alt-fill"></i><Link to='/'>Find a Store</Link>
+                 <i className="bi bi-geo-alt-fill"></i><Link to='/store'>Find a Store</Link>
                  <Button className="buttons btn-hover">Sign In</Button>
                  <Button className="buttons btn-dark btn-hover ">Join Now</Button>
               </div>

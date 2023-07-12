@@ -1,4 +1,5 @@
 import React from "react";
+
 import MenuBar from "../components/MenuBar/MenuBar";
 import MenuPicList from "../components/Menu/MenuPicList";
 import { useFetch } from "../Hooks/useFetch";
@@ -14,8 +15,15 @@ const Menu = () => {
        {error && <ErrorMessage>{error}</ErrorMessage>}
       {loading && <Loader/>}
       {!error && !loading && (<>
-       <MenuList data={data}/> 
-      <MenuPicList data={data}/></>)}
+      <div className="row">
+        <div className="col-md-4">
+       <MenuList  data={data}/> 
+       </div>
+       <div className="col-md-8" >
+      <MenuPicList data={data}/>
+      </div>
+      </div>
+      </>)}
      </div>
   );
 };

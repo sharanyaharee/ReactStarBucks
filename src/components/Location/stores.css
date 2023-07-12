@@ -1,0 +1,21 @@
+select{
+   margin:2em; 
+   width:70%;
+}
+
+.icon{
+    color: black;
+    font-size: x-large;
+}
+
+.filterBtn{
+    color:var(--green);
+    border-color: var(--green) !important;
+    
+}
+.filterBtn:hover{
+    background-color: var(--olive);
+}
+.map{
+    width:100%;
+}
