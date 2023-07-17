@@ -5,11 +5,9 @@ import { useState } from 'react';
 import { Link} from 'react-router-dom';
 
 const Location = ({data}) => {
-  const [showComponent, setShowComponent] = useState(false);
+ 
   const storeName = sessionStorage.getItem('storeName');
-  const renderCart = ()=>{
-    setShowComponent(!showComponent)
-  }
+  const[cart,setCart]=useState([])
   return (
     <div>
       <div className='location sticky-bottom'>
@@ -25,9 +23,10 @@ const Location = ({data}) => {
               <h5>Choose a Store</h5>
             </>
           )}
-        </Link>
-          <span onClick={renderCart} className='cart'><i className="bi bi-bag"></i></span>
-          {/* {showComponent && <Cart data={data} />} */}
+        </Link >
+        <Link to={'/placeOrder'}>
+          <span  className='cart' ><i className="bi bi-bag"></i></span>
+          </Link>
       </div>
     </div>
   );

@@ -1,0 +1,12 @@
+
+.width{
+    width:40rem;
+  }
+  .buttonSubmit,.buttonSubmit:hover {
+    background-color: var(--green);
+  }
+  .margin{
+    margin-left:20rem;
+  
+  }
+  

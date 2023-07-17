@@ -1,5 +1,5 @@
 import React from "react";
-
+import Header from "../components/Header/Header";
 import MenuBar from "../components/MenuBar/MenuBar";
 import MenuPicList from "../components/Menu/MenuPicList";
 import { useFetch } from "../Hooks/useFetch";
@@ -11,6 +11,7 @@ const Menu = () => {
   const[data,loading,error] = useFetch("/menu")
   return (
     <div>
+      <Header/>
        <MenuBar/>
        {error && <ErrorMessage>{error}</ErrorMessage>}
       {loading && <Loader/>}

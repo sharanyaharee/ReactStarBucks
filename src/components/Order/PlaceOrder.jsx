@@ -3,12 +3,15 @@ import "./placeOrder.css";
 import { useFetch } from "../../Hooks/useFetch";
 import ErrorMessage from "../ErrorMessage";
 import Loader from "../Loader";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const PlaceOrder = () => {
   const menuId = sessionStorage.getItem("menuId");
   const storeId = sessionStorage.getItem("storeId");
-
+  const navigate = useNavigate()
   const [data, error, loading] = useFetch( `/store?storeId=${storeId}&menuId=${menuId}`);
 
   useEffect(()=>{
@@ -33,13 +36,37 @@ const incQty = () => {
 };
 
 const decQty = () => {
-  if (quantity > 0) {
-    const newQuantity = quantity - 1;
+  if (quantity > 1) {
+    const newQuantity = quant1ity - 1;
     setQuantity(newQuantity);
     sessionStorage.setItem('quantity', newQuantity);
   }
 };
+const checkIfUserLoggedIn = () => {
+  const userLoggedIn = sessionStorage.getItem('userLoggedIn');
+  if (userLoggedIn === "true") {
+    navigate('/orderDetails ');
+  }else
+  {
+  toast.error('Please SignIn to place an order!', {
+    position: "top-center",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "colored",
+    })
+    setTimeout(() => {
+      navigate('/signIn');
+    }, 3000); // Delayed navigation after 2000 milliseconds (2 seconds)
+  }
+};
 
+const changeMenu=()=>{
+  navigate(`/menu/${menuId}`)
+}
  return (
     <div>
       {error && <ErrorMessage>{error}</ErrorMessage>}
@@ -114,12 +141,23 @@ const decQty = () => {
                       </div>
                     </div>
              
-                    <Link to={`/menu/${menuId}` } >
-                      <button className="btn btn-success m-5">Change Menu</button>
-                    </Link>
-                    <Link to={"/orderDetails" } >
-                      <button className="btn btn-success m-5">Place Order</button>
-                    </Link>
+                  
+                      <button className="btn btn-success m-5 rounded-pill" onClick={changeMenu}>Change Menu</button>
+                
+                    
+                      <button className="btn btn-success m-5 rounded-pill" onClick={checkIfUserLoggedIn}>Place Order</button>
+                      <ToastContainer
+    position="top-center"
+    autoClose={5000}
+    hideProgressBar={false}
+    newestOnTop={false}
+    closeOnClick
+    rtl={false}
+    pauseOnFocusLoss
+    draggable
+    pauseOnHover
+    theme="colored"
+    />
                     </div>
                   </div>
               

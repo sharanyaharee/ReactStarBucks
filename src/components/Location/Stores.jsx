@@ -4,6 +4,7 @@ import { useSearchParams,useNavigate } from "react-router-dom";
 import Loader from "../Loader";
 import "./stores.css";
 import ErrorMessage from "../ErrorMessage";
+import Header from "../Header/Header";
 
 const Stores = () => {
   const [data, error, loading] = useFetch(`/store`);
@@ -21,7 +22,8 @@ const handleCity = (e) => {
 };
   return (
     <div>
-            <div className="row">
+      <Header/>
+            <div className="row ms-2 my-5">
       {error && <ErrorMessage>{error}</ErrorMessage>}
       {loading && <Loader/>}
       {!error && !loading && (

@@ -1,13 +1,33 @@
 import React from "react";
 import "./body.css";
 import { Link } from "react-router-dom";
+import { useState,useEffect } from "react";
+import starbucksCoupon from '../../assets/starbucksCoupon.jpeg'
+
 
 const Body = () => {
-  //console.log("this isssss")
+  const [showCouponPopup, setShowCouponPopup] = useState(false);
 
+  useEffect(() => {
+  setTimeout(() => {
+      setShowCouponPopup(true);
+      document.getElementById("sec").classList.add('coupon-open');
+    }, 2000);
+  }, []);
+
+  const handleClose = () => {
+    setShowCouponPopup(false);
+    document.getElementById("sec").classList.remove('coupon-open');
+
+  };
   return (
     <div>
-      <section className="mainContainer">
+      {showCouponPopup &&
+       ( <div id="coupon">
+    <button id="close" onClick={handleClose} > &times;  </button>
+    <img  src={starbucksCoupon}/>
+   </div>)}
+      <section className="mainContainer" id="sec">
         <div className="box box1">
           <div className="box-size box-text">
             <h2>More sips, more trips</h2>

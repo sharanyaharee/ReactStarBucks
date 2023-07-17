@@ -50,7 +50,7 @@ const MenuOptions = () => {
                   
                     <div className="options" key={menu_id}>
                      
-                      <div className="tile shadow-sm p-3 mb-5 bg-body-tertiary rounded bg-white rounded">
+                      <div className="tile shadow-sm p-3 mb-5 bg-body-tertiary bg-white rounded">
                         <img className="round-image " src={imageKey} alt="" />
                         <Link to={`/menu/${menu_id}`}>
                           <h5 className=" text-center">{menu_name}</h5>

@@ -8,7 +8,7 @@ const Footer = () => {
       <footer>
         <div >
          
-          <ul> About Us
+          <ul> <h5>About Us</h5>
             <li>Our Company</li>
             <li>Our Coffee</li>
             <li>Stories and News</li>
@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
         <div>
          
-          <ul> Careers
+          <ul><h5> Careers</h5>
             <li>Culture and Values</li>
             <li>Inclusion, Diversity, and Equity</li>
             <li>College Achievement Plan</li>
@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
         <div >
           
-          <ul>Social Impact
+          <ul><h5>Social Impact</h5>
             <li>People</li>
             <li>Planet</li>
             <li>Environmental and Social Impact Reporting</li>
@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
         <div>
          
-          <ul> For Business Partners
+          <ul> <h5>For Business Partners</h5>
             <li>Landlord Support Center</li>
             <li>Suppliers</li>
             <li>Corporate Gift Card Sales</li>
@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
         <div >
          
-          <ul> Order and Pickup
+          <ul><h5>For Business Partners</h5>
             <li>Order on the App</li>
             <li>Order on the Web</li>
             <li>Delivery</li>
@@ -66,10 +66,10 @@ const Footer = () => {
         <i className="bi bi-twitter " style="font-size:1.8rem;color:black;"></i>
                  <img src="images/spotify.png" className="footer-icons" alt="spotify logo" /> */}
         <img src="/images/fb.png" className="footer-icons" alt="fb logo" />
-        <img src="images/pinterest.png" className="footer-icons" alt="pinterest logo" />
-        <img src="images/insta.png" className="footer-icons" alt="insta logo" />
-        <img src="images/youtube.png" className="footer-icons" alt="youtube logo" />
-        <img src="images/twitter.png" className="footer-icons" alt="twitter logo" />
+        <img src="/images/pinterest.png" className="footer-icons" alt="pinterest logo" />
+        <img src="/images/insta.png" className="footer-icons" alt="insta logo" />
+        <img src="/images/youtube.png" className="footer-icons" alt="youtube logo" />
+        <img src="/images/twitter.png" className="footer-icons" alt="twitter logo" />
         <div className="foot-note">
           <span>Privacy Notice </span><span>|</span><span> Terms of Use </span>
           <span>|</span> <span> Do Not Share My Personal Information</span>

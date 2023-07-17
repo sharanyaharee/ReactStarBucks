@@ -1,11 +1,16 @@
 import React from 'react'
+import BeatLoader from "react-spinners/BeatLoader";
 
 const Loader = () => {
   return (
     <div>
-        Loading.....
-    {/* <div class="tenor-gif-embed" data-postid="26060626" data-share-method="host" data-aspect-ratio="1.5534" data-width="100%"><a href="https://tenor.com/view/book-loading-gif-26060626">Book Loading Sticker</a>from <a href="https://tenor.com/search/book+loading-stickers">
-      </a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script> */}
+     <BeatLoader
+        color={"#006241"}
+        size={50}
+        margin={100}
+        aria-label="Loading Spinner"
+        data-testid="loader"
+      />
     </div>
   )
 }

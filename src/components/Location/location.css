@@ -6,6 +6,7 @@
     justify-content: space-around;
      border-bottom:solid var(--white) !important;
     position: fixed;
+    padding: 5rem;
 }
 .location h5,span{
     color: var(--white);

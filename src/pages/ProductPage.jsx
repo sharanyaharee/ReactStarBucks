@@ -5,6 +5,7 @@ import { useFetch } from '../Hooks/useFetch'
 import Loader from '../components/Loader'
 import ErrorMessage from '../components/ErrorMessage'
 import { useParams } from 'react-router-dom'
+import Header from '../components/Header/Header'
 
 
 const ProductPage = () => {
@@ -14,6 +15,7 @@ const ProductPage = () => {
  sessionStorage.setItem("menuId",menuId)
   return (
     <div>
+      <Header/>
        {error && <ErrorMessage>{error}</ErrorMessage>}
       {loading && <Loader/>}
       {!error && !loading && (

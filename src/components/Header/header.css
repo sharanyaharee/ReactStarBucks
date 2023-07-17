@@ -34,7 +34,7 @@
  display: flex;
  }
   .right-nav{
-margin-left:30em;
+margin-left:20em;
   } 
   .left-right-wrapper{
    width:auto;
@@ -42,10 +42,16 @@ margin-left:30em;
    justify-content: space-between;
   }
   #weather{
-    margin-right:2em;
+     margin-right:2em; 
     border:none;
     font-size: 1rem;
     font-weight: bold;
     background: transparent;
     color: rgb(52, 95, 68);
+  }
+  .user{
+    color:var(--green);
+    font-weight: bolder;
+    margin:3rem;
+    font-size: 1.2rem;
   }

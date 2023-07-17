@@ -1,33 +1,4 @@
 
-/* buttons
-.btn {
-    cursor: pointer;
-    display: inline-block;
-    background: none;
-    border: 1px solid var(--black) !important;
-    border-radius: 50px !important;
-    padding: 7px 16px;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    line-height: 1.2;
-  }
-  
-  .btn-dark {
-    color: var(--white);
-    background-color: var(--black);
-  }
-  
-  .btn-light-outline {
-    color: var(--white);
-    border-color: var(--white);
-  }
-  
-  .btn-hover:hover {
-    background-color: var(--white2);
-  }
-   */
-  /*body buttons*/
   .b {
     font-weight: 600;
     font-size: large;
