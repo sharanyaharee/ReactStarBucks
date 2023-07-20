@@ -16,7 +16,7 @@ const params = useParams()
  params.email? email =params.email: email = location.state?.email;
  sessionStorage.setItem("email",email)
 
-  const [data, error, loading] = useFetch(`orders?email=${email}`);
+  const [data, error, loading] = useFetch(`/orders?email=${email}`);
   return (
     <>
     <Header/>

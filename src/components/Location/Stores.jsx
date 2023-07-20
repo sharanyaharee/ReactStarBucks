@@ -27,30 +27,18 @@ const handleCity = (e) => {
       {error && <ErrorMessage>{error}</ErrorMessage>}
       {loading && <Loader/>}
       {!error && !loading && (
-         <div className="col-6">
-      
-             {/* <input
-               className="border-0 border-bottom fs-5 p- border-dark"
-               type="text"
-               placeholder="Find a store"
-             /> */}
-           
-           <select className="border-0 border-bottom fs-5 p- border-dark" onChange={handleCity}>
-  <option>Find a store</option>
-  {data?.map(({ _id, store_id, store_name }) => {
-    return (
-     
-      <option key={_id} value={store_id}>
-        {store_name}
-      </option>
-  
-    );
-  })}
-</select>
+         <div className="col-6">   
+          <select className="border-0 border-bottom fs-5 p- border-dark" onChange={handleCity}>
+           <option>Find a store</option>
+             {data?.map(({ _id, store_id, store_name }) => {
+               return (
+           <option key={_id} value={store_id}>{store_name}</option>
+                      );
+       })}
+         </select>
              <i className="bi icon bi-search"></i>
              <button className="btn filterBtn m-3" onClick={proceed}>Proceed</button>
-       
-           <h3>We are unable to access your exact location</h3>
+             <h3>We are unable to access your exact location</h3>
            <p>
              To find a Starbucks store, use the search feature, navigate using the
              map, or turn on location services.

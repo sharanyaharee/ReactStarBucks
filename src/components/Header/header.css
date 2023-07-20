@@ -1,9 +1,7 @@
 .wrapper {
   padding: 1em;
   text-align: center;
- 
-  box-shadow: 0 1px 3px #0000001a, 0 2px 2px #0000000f,
-    0 0 2px #00000012;
+  box-shadow: 0 1px 3px #0000001a, 0 2px 2px #0000000f, 0 0 2px #00000012;
 }
 .logoImg {
   width: 3rem;
@@ -45,7 +43,7 @@ margin-left:20em;
      margin-right:2em; 
     border:none;
     font-size: 1rem;
-    font-weight: bold;
+    /* font-weight: bold; */
     background: transparent;
     color: rgb(52, 95, 68);
   }

@@ -14,12 +14,17 @@ const MenuOptions = () => {
   let group = "";
   sessionStorage.setItem("catId", catId);
   const [data, loading, error,setData] = useFetch(`/featured?catId=${catId}`);
+
+  if (!data || data.length === 0) {
+    return (
+      <div className="itemUnavailable">
+        <h4>Sorry! ITEM UNAVAILABLE!!</h4>
+      </div>
+    );
+  }
     if (data && data.length > 0) {
     group = data[0].group;
-  } else {
-    console.log("No data available");
   }
-
   return (
     <div>
       {error && <ErrorMessage>{error}</ErrorMessage>}

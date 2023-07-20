@@ -25,7 +25,7 @@ const Product = ({data}) => {
       {data?.map(({category_id,  _id, imageKey, menu_name,price, average_rating, rating_text,}) => {
           return (
             <div key={_id}>
-              <div className="product my-5">
+              <div className="product ">
                 <div className="round-img">
                   <img src={imageKey} alt="" />
                 </div>

@@ -34,49 +34,7 @@ const handleLogOut =()=>{
   navigate(`/signIn`)
 }
 
-// const ConditionalHeader =  () => {
-//         if(userData){
-//             if(userData.name){
-//                 sessionStorage.setItem('userInfo',JSON.stringify(userData))
-//                 return(
-//                     <>
-//                         <Link to="register" className='btn btn-primary'>
-//                             <span className="glyphicon glyphicon-user"></span> Hi {userData.name}
-//                         </Link> &nbsp;
-//                         <button onClick={handleLogout} className='btn btn-danger'>
-//                             <span className="glyphicon glyphicon-log-out"></span> Logout
-//                         </button>
-//                     </>
-//                 )
-//             }
-//         }else{
-//                 return(
-//                     <>
-//                         <Link to="register" className='btn btn-primary'>
-//                             <span className="glyphicon glyphicon-user"></span> Sign Up
-//                         </Link> &nbsp;
-//                         <Link to="login" className='btn btn-success'>
-//                             <span className="glyphicon glyphicon-log-in"></span> Login
-//                         </Link>
-//                     </>
-//                 )
-//             }
-   // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  useEffect(()=>{
+useEffect(()=>{
 const successCallback = (position) => {
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;
@@ -114,19 +72,16 @@ navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
           
             <div className="left-right-wrapper">
               <div className="left-nav"> 
-                 <Link to={"/menu"} className="fw-bold px-4">MENU</Link>
-                 <Link to={"/menu"} className="fw-bold px-4">REWARDS</Link>
-                 <Link to={"/menu"} className="fw-bold px-4">GIFT CARDS</Link>
+                 <Link to={"/menu"} className="fw-bold ps-4">MENU</Link>
+                 <Link to={"/menu"} className="fw-bold px-5">REWARDS</Link>
+                 <Link to={"/menu"} className="fw-bold ps-3">GIFT CARDS</Link>
               </div> 
               <div className="right-nav">
               <button  id="weather"><i className="bi bi-cloud-sun-fill" ></i></button>
                  <i className="bi bi-geo-alt-fill" ></i>
                  <Link to='/store'>Find a Store</Link>
-                 
+    
                   {ConditionalHeader()}
-                  
-             
-               
                  <i  onClick={handleMode} className="bi bi-brightness-high-fill"  id="themeSwitch" ></i>
               </div>
           </div>

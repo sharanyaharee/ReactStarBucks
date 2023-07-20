@@ -22,4 +22,8 @@
   align-items: center;
   } */
 
-  
+  .itemUnavailable{
+    margin:2rem;
+    text-align: left;
+    color:brown;
+  }

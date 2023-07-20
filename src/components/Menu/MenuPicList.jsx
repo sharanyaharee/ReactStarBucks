@@ -6,13 +6,14 @@ const MenuPicList = ({ data }) => {
   const catArray2 = data.filter((item) => item.category_type === "Food");
   const catArray3 = data.filter((item) => item.category_type === "At Home Coffee");
 
+
   return (
     <div>
       <div id="menuPicDiv">
         <h2 className="text-start fw-bold">Menu</h2>
         <h4 className="border-bottom mt-5">Drinks</h4>
         <div className="wrapClass">
-          {catArray1?.map(({image, category, category_id }) => {
+          { catArray1.map(({image, category, category_id }) => {
             return (
               <div  key={category_id}>
                 <div className="item mt-5"   >

@@ -37,7 +37,7 @@ const incQty = () => {
 
 const decQty = () => {
   if (quantity > 1) {
-    const newQuantity = quant1ity - 1;
+    const newQuantity = quantity - 1;
     setQuantity(newQuantity);
     sessionStorage.setItem('quantity', newQuantity);
   }

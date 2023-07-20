@@ -41,7 +41,7 @@ const menuName = sessionStorage.getItem('menuName')
         },
         body:JSON.stringify(values)
     })
-    .then(navigate(`/orders`,{ state:{email:values.email}}) )
+    .then(setTimeout(()=>{navigate(`/orders`,{ state:{email:values.email}})},2000) )
 }
 
 const handleInputChange = (e) => {
